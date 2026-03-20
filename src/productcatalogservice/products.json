@@ -107,6 +107,222 @@
                 "nanos": 990000000
             },
             "categories": ["kitchen"]
+        },
+        {
+            "id": "TC2023SMWH",
+            "name": "Smartwatch Pro",
+            "description": "Stay connected and track your fitness with this sleek smartwatch. Features a heart rate monitor, GPS, and a battery life of up to 5 days.",
+            "picture": "/static/img/products/watch.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 199,
+                "nanos": 990000000
+            },
+            "categories": ["tech", "accessories"]
+        },
+        {
+            "id": "TC2023WLHP",
+            "name": "Noise Cancelling Wireless Headphones",
+            "description": "Experience premium sound with industry-leading noise cancellation. Perfect for commuting, working, or just relaxing.",
+            "picture": "/static/img/products/sunglasses.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 249,
+                "nanos": 500000000
+            },
+            "categories": ["tech", "audio"]
+        },
+        {
+            "id": "TC2023MKGB",
+            "name": "Mechanical Gaming Keyboard",
+            "description": "Enhance your gaming and typing experience with this tactile mechanical keyboard. Features customizable RGB lighting and fast-response switches.",
+            "picture": "/static/img/products/salt-and-pepper-shakers.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 129,
+                "nanos": 0
+            },
+            "categories": ["tech", "gaming"]
+        },
+        {
+            "id": "TC2024LPT1",
+            "name": "Ultra-Thin Laptop Pro",
+            "description": "High-performance laptop with a stunning display, perfect for professionals and creatives. All-day battery life and ultra-fast SSD.",
+            "picture": "/static/img/products/laptop_pro_1773991970790.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 1499,
+                "nanos": 0
+            },
+            "categories": ["tech", "computers"]
+        },
+        {
+            "id": "TC2024PHNX",
+            "name": "Smartphone X",
+            "description": "The latest flagship smartphone featuring a revolutionary camera system, edge-to-edge display, and blazing fast processor.",
+            "picture": "/static/img/products/smartphone_x_1773991985014.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 999,
+                "nanos": 990000000
+            },
+            "categories": ["tech", "mobile"]
+        },
+        {
+            "id": "TC2024TBLO",
+            "name": "OLED Tablet Plus",
+            "description": "A versatile tablet perfect for digital art, taking notes, or watching movies. Features a vibrant OLED display and includes a digital stylus.",
+            "picture": "/static/img/products/tablet_oled_1773992001851.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 699,
+                "nanos": 0
+            },
+            "categories": ["tech", "tablet"]
+        },
+        {
+            "id": "TC2024WEAR",
+            "name": "True Wireless Earbuds",
+            "description": "Premium earbuds offering crystal-clear sound, active noise cancellation, and all-day comfort. Comes with a matte black charging case.",
+            "picture": "/static/img/products/wireless_earbuds_1773992017312.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 149,
+                "nanos": 500000000
+            },
+            "categories": ["tech", "audio"]
+        },
+        {
+            "id": "TC2024GMOU",
+            "name": "Pro Gaming Mouse",
+            "description": "Ergonomic wireless gaming mouse with pinpoint accuracy, customizable RGB lighting, and ultra-low latency.",
+            "picture": "/static/img/products/gaming_mouse_1773992030461.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 79,
+                "nanos": 990000000
+            },
+            "categories": ["tech", "gaming"]
+        },
+        {
+            "id": "TC2024MON4K",
+            "name": "4K Editing Monitor",
+            "description": "Professional 32-inch 4K monitor with perfect color accuracy, ideal for photo and video editing.",
+            "picture": "/static/img/products/4k_monitor_1773992079021.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 899,
+                "nanos": 990000000
+            },
+            "categories": ["tech", "displays"]
+        },
+        {
+            "id": "TC2024VRHS",
+            "name": "Aether VR Headset",
+            "description": "Next-generation standalone virtual reality headset with dual high-resolution displays and intuitive motion controllers.",
+            "picture": "/static/img/products/vr_headset_1773992092912.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 499,
+                "nanos": 0
+            },
+            "categories": ["tech", "gaming", "vr"]
+        },
+        {
+            "id": "TC2024PSSD",
+            "name": "Rugged Portable SSD 2TB",
+            "description": "Ultra-fast, durable, and water-resistant portable solid-state drive.",
+            "picture": "/static/img/products/portable_ssd_1773992106221.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 219,
+                "nanos": 500000000
+            },
+            "categories": ["tech", "storage"]
+        },
+        {
+            "id": "TC2024SMSP",
+            "name": "Aura Smart Speaker",
+            "description": "Premium smart speaker with room-filling sound and an integrated voice assistant for your smart home.",
+            "picture": "/static/img/products/smart_speaker_1773992120364.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 129,
+                "nanos": 990000000
+            },
+            "categories": ["tech", "audio", "smart-home"]
+        },
+        {
+            "id": "TC2024KKEY",
+            "name": "Mechanical Keycap Set - Rainbow",
+            "description": "Vibrant, high-quality PBT keycaps to customize your mechanical keyboard.",
+            "picture": "/static/img/products/mechanical_keycap_set_1773992135182.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 45,
+                "nanos": 0
+            },
+            "categories": ["tech", "accessories"]
+        },
+        {
+            "id": "TC2024SMTH",
+            "name": "Smart Thermostat",
+            "description": "Intelligent home thermostat that learns your habits to save energy, with a sleek digital display.",
+            "picture": "/static/img/products/smart_thermostat_1773992263392.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 249,
+                "nanos": 0
+            },
+            "categories": ["tech", "smart-home"]
+        },
+        {
+            "id": "TC2024HUB7",
+            "name": "7-in-1 USB-C Hub",
+            "description": "Multi-port aluminum type-c hub with 4K HDMI, SD card readers, and ample USB ports for all your peripherals.",
+            "picture": "/static/img/products/usb_c_hub_1773992279379.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 59,
+                "nanos": 990000000
+            },
+            "categories": ["tech", "accessories"]
+        },
+        {
+            "id": "TC2024WC4K",
+            "name": "Pro 4K Webcam",
+            "description": "High-fidelity 4K streaming webcam with autofocus and built-in noise reducing microphones.",
+            "picture": "/static/img/products/webcam_4k_1773992294852.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 199,
+                "nanos": 500000000
+            },
+            "categories": ["tech", "accessories", "cameras"]
+        },
+        {
+            "id": "TC2024WCP1",
+            "name": "Minimalist Wireless Charger",
+            "description": "Fast-charging wireless pad featuring a premium fabric finish that blends into any workspace.",
+            "picture": "/static/img/products/wireless_charger_1773992309606.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 39,
+                "nanos": 990000000
+            },
+            "categories": ["tech", "accessories"]
+        },
+        {
+            "id": "TC2024CAMX",
+            "name": "Action Camera Extreme",
+            "description": "Rugged, waterproof action camera shooting in 5K resolution, perfect for extreme sports and outdoor adventures.",
+            "picture": "/static/img/products/action_camera_1773992324087.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 399,
+                "nanos": 0
+            },
+            "categories": ["tech", "cameras"]
         }
     ]
 }
