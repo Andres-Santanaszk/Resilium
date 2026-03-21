@@ -30,7 +30,7 @@ body {
 /* Header */
 
 header {
-  background-color: #853B5C;
+  background-color: #1a365d; /* Modern Deep Navy Blue */
   color: white;
 }
 
@@ -68,7 +68,7 @@ header .cart-size-circle {
   font-size: 11px;
   border-radius: 4px 4px 0 4px;
   color: white;
-  background-color: #853B5C;
+  background-color: #1a365d;
 }
 
 header .navbar {
@@ -244,7 +244,7 @@ footer.py-5 {
 
 footer .footer-top {
   padding: 60px 0px;
-  background-color: #570D2E;
+  background-color: #0f172a; /* Slate 950 - Modern Tech Dark Blue */
   color: white;
 }
 
@@ -375,7 +375,7 @@ similar to that of the hot-products-row.
 .home-desktop-footer-row {
   padding-left: 9%;
   padding-right: 9%;
-  background-color: #570D2E;
+  background-color: #0f172a;
   width: 100%;
   margin: 0;
 }
@@ -384,7 +384,7 @@ similar to that of the hot-products-row.
 
 .ad {
   position: relative;
-  background-color: #FF9A9B;
+  background-color: #dbeafe; /* Modern light blue */
   font-size: 24px;
   text-align: center;
 }
@@ -493,6 +493,7 @@ similar to that of the hot-products-row.
 .azure-platform,
 .alibaba-platform,
 .gcp-platform {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -595,7 +596,7 @@ the rules below could be extracted.
 
 .cymbal-button-primary, .cymbal-button-secondary {
   display: inline-block;
-  border: solid 1px #CE0631;
+  border: solid 1px #2563eb; /* Modern Blue */
   padding: 8px 16px;
   outline: none;
   font-size: 14px;
@@ -608,15 +609,15 @@ the rules below could be extracted.
 }
 
 .cymbal-button-primary {
-  background-color: #CE0631;
+  background-color: #2563eb;
   color: white;
 }
 
 .cymbal-button-primary:active,
 .cymbal-button-primary:focus,
 .cymbal-button-primary:hover {
-  border: solid 1px #7b031d;
-  background-color: #7b031d;
+  border: solid 1px #1d4ed8;
+  background-color: #1d4ed8;
   box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 30%);
 }
 
@@ -626,14 +627,14 @@ the rules below could be extracted.
 
 .cymbal-button-secondary {
   background: none;
-  color: #CE0631;
+  color: #2563eb;
 }
 
 .cymbal-button-secondary:active,
 .cymbal-button-secondary:focus,
 .cymbal-button-secondary:hover {
-  color: #7b031d;
-  border: solid 1px #7b031d;
+  color: #1d4ed8;
+  border: solid 1px #1d4ed8;
 }
 
 .cymbal-button-secondary:active {
