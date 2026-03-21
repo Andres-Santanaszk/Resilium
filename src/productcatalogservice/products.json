@@ -1,147 +1,13 @@
 {
     "products": [
         {
-            "id": "TC2024WEAR",
-            "name": "Apple AirPods Pro (2nd Gen)",
-            "description": "Experience up to 2x more Active Noise Cancellation, plus Adaptive Transparency and Personalized Spatial Audio.",
-            "picture": "/static/img/products/airpods_pro_1774051730182.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 249,
-                "nanos": 0
-            },
-            "categories": [
-                "tech",
-                "audio"
-            ]
-        },
-        {
-            "id": "2ZYFJ3GM2N",
-            "name": "Dyson Supersonic Hair Dryer",
-            "description": "The fastest drying, with powerful intelligent heat control to protect hair from extreme heat damage.",
-            "picture": "/static/img/products/dyson_hairdryer_1774051491326.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 429,
-                "nanos": 990000000
-            },
-            "categories": [
-                "hair",
-                "beauty"
-            ]
-        },
-        {
-            "id": "TC2024WCP1",
-            "name": "UGREEN 65W Minimalist Wireless Charger",
-            "description": "Fast-charging wireless pad featuring a premium fabric finish that blends into any workspace.",
-            "picture": "/static/img/products/wireless_charger_1773992309606.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 59,
-                "nanos": 990000000
-            },
-            "categories": [
-                "tech",
-                "accessories"
-            ]
-        },
-        {
-            "id": "66VCHSJNUP",
-            "name": "Nike Pro Dri-FIT Tank",
-            "description": "Perfectly fitted performance tank top, engineered with Dri-FIT technology.",
-            "picture": "/static/img/products/nike_tank_1774051451712.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 35,
-                "nanos": 0
-            },
-            "categories": [
-                "clothing",
-                "tops"
-            ]
-        },
-        {
-            "id": "OLJCESPC7Z",
-            "name": "Ray-Ban Aviator Classic",
-            "description": "Add a modern touch to your outfits with the iconic Ray-Ban aviator sunglasses.",
-            "picture": "/static/img/products/rayban_aviator_1774051438745.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 160,
-                "nanos": 0
-            },
-            "categories": [
-                "accessories"
-            ]
-        },
-        {
-            "id": "TC2024CAMX",
-            "name": "Sony Action Camera Extreme",
-            "description": "Rugged, waterproof action camera shooting in 5K resolution, perfect for extreme sports and outdoor adventures.",
-            "picture": "/static/img/products/action_camera_1773992324087.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 499,
-                "nanos": 0
-            },
-            "categories": [
-                "tech",
-                "cameras"
-            ]
-        },
-        {
-            "id": "TC2024SMTH",
-            "name": "Google Nest Smart Thermostat",
-            "description": "Intelligent home thermostat that learns your habits to save energy, with a sleek digital display.",
-            "picture": "/static/img/products/smart_thermostat_1773992263392.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 249,
-                "nanos": 0
-            },
-            "categories": [
-                "tech",
-                "smart-home"
-            ]
-        },
-        {
-            "id": "TC2024HUB7",
-            "name": "Baseus 7-in-1 USB-C Hub",
-            "description": "Multi-port aluminum type-c hub with 4K HDMI, SD card readers, and ample USB ports for all your peripherals.",
-            "picture": "/static/img/products/usb_c_hub_1773992279379.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 59,
-                "nanos": 990000000
-            },
-            "categories": [
-                "tech",
-                "accessories"
-            ]
-        },
-        {
-            "id": "0PUK6V6EV0",
-            "name": "IKEA GLITTRIG Candle Holder",
-            "description": "This minimalist golden candle holder is an excellent addition to modern decor.",
-            "picture": "/static/img/products/ikea_candle_holder_1774051514654.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 24,
-                "nanos": 990000000
-            },
-            "categories": [
-                "decor",
-                "home"
-            ]
-        },
-        {
             "id": "TC2024PHNX",
-            "name": "Apple iPhone 15 Pro",
+            "name": "Apple iPhone 17 Pro Max",
             "description": "Forged in titanium, featuring the groundbreaking A17 Pro chip and a versatile Pro camera system.",
             "picture": "/static/img/products/iphone_15_pro_1774051696282.png",
             "priceUsd": {
                 "currencyCode": "USD",
-                "units": 999,
+                "units": 1499,
                 "nanos": 0
             },
             "categories": [
@@ -165,73 +31,101 @@
             ]
         },
         {
-            "id": "TC2024KKEY",
-            "name": "GMK Laser Mechanical Keycap Set",
-            "description": "Vibrant and retro-themed high-quality PBT keycaps featuring Double-shot technology for ultimate longevity.",
-            "picture": "/static/img/products/mechanical_keycap_set_1773992135182.png",
+            "id": "TC2024VANS",
+            "name": "Vans Old Skool Sneakers",
+            "description": "The first classic skate shoe to bare the iconic side stripe. A low top lace-up with durable suede and canvas uppers.",
+            "picture": "/static/img/products/vans_old_skool_1774069617864.png",
             "priceUsd": {
                 "currencyCode": "USD",
-                "units": 139,
-                "nanos": 0
-            },
-            "categories": [
-                "tech",
-                "accessories"
-            ]
-        },
-        {
-            "id": "TC2023SMWH",
-            "name": "Smart Watch Series X10",
-            "description": "Midnight aluminum case with sport band, featuring new health sensors and a brighter display.",
-            "picture": "/static/img/products/apple_watch_s9_1774051644949.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 199,
-                "nanos": 0
-            },
-            "categories": [
-                "tech",
-                "accessories"
-            ]
-        },
-        {
-            "id": "1YMWWN1N4O",
-            "name": "Seiko Presage Automatic",
-            "description": "This stunning stainless steel watch features a mesmerizing blue dial and automatic movement.",
-            "picture": "/static/img/products/seiko_watch_1774051465060.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 450,
-                "nanos": 0
-            },
-            "categories": [
-                "accessories"
-            ]
-        },
-        {
-            "id": "TC2024SMSP",
-            "name": "Xiaomi Smart Speaker",
-            "description": "Xiaomi Premium smart speaker with room-filling sound and an integrated voice assistant for your smart home.",
-            "picture": "/static/img/products/smart_speaker_1773992120364.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 129,
+                "units": 69,
                 "nanos": 990000000
             },
             "categories": [
-                "tech",
-                "audio",
-                "smart-home"
+                "footwear",
+                "clothing"
             ]
         },
         {
-            "id": "LS4PSXUNUM",
-            "name": "Peugeot Paris Salt & Pepper Mills",
-            "description": "Classic wooden mills with adjustable grind mechanisms, a staple for any kitchen.",
-            "picture": "/static/img/products/peugeot_mills_1774051528524.png",
+            "id": "TC2024FEN",
+            "name": "Fender Player Stratocaster Electric Guitar",
+            "description": "The inspiring sound of a Stratocaster is one of the foundations of Fender. Timeless tone and classic style.",
+            "picture": "/static/img/products/fender_stratocaster_1774069589710.png",
             "priceUsd": {
                 "currencyCode": "USD",
-                "units": 45,
+                "units": 799,
+                "nanos": 990000000
+            },
+            "categories": [
+                "instruments"
+            ]
+        },
+        {
+            "id": "TC2024DEW",
+            "name": "DeWalt 20V MAX Cordless Drill Kit",
+            "description": "Powerful, compact, and lightweight drill driver for a wide range of applications.",
+            "picture": "/static/img/products/dewalt_drill_kit_1774069605662.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 159,
+                "nanos": 0
+            },
+            "categories": [
+                "tools"
+            ]
+        },
+        {
+            "id": "66VCHSJNUP",
+            "name": "Nike Pro Dri-FIT Tank",
+            "description": "Perfectly fitted performance tank top, engineered with Dri-FIT technology.",
+            "picture": "/static/img/products/nike_tank_1774051451712.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 35,
+                "nanos": 0
+            },
+            "categories": [
+                "clothing",
+                "tops"
+            ]
+        },
+        {
+            "id": "0PUK6V6EV0",
+            "name": "IKEA GLITTRIG Candle Holder",
+            "description": "This minimalist golden candle holder is an excellent addition to modern decor.",
+            "picture": "/static/img/products/ikea_candle_holder_1774051514654.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 24,
+                "nanos": 990000000
+            },
+            "categories": [
+                "decor",
+                "home"
+            ]
+        },
+        {
+            "id": "TC2024TBLO",
+            "name": "Apple iPad Pro M2",
+            "description": "Astonishing performance and advanced displays, superfast wireless connectivity, and next-level Apple Pencil features.",
+            "picture": "/static/img/products/ipad_pro_1774051716883.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 799,
+                "nanos": 0
+            },
+            "categories": [
+                "tech",
+                "tablet"
+            ]
+        },
+        {
+            "id": "6E92ZMYYFZ",
+            "name": "YETI Rambler 14 oz Mug",
+            "description": "Stainless steel double-wall vacuum insulated mug. Keeps your coffee hot for hours.",
+            "picture": "/static/img/products/yeti_mug_1774051552128.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 30,
                 "nanos": 0
             },
             "categories": [
@@ -239,33 +133,33 @@
             ]
         },
         {
-            "id": "TC2023WLHP",
-            "name": "Sony WH-1000XM5",
-            "description": "Industry-leading noise cancellation, crystal clear hands-free calling, and up to 30 hours of battery life.",
-            "picture": "/static/img/products/sony_xm5_1774051659132.png",
+            "id": "TC2024WCP1",
+            "name": "UGREEN 65W Minimalist Wireless Charger",
+            "description": "Fast-charging wireless pad featuring a premium fabric finish that blends into any workspace.",
+            "picture": "/static/img/products/wireless_charger_1773992309606.png",
             "priceUsd": {
                 "currencyCode": "USD",
-                "units": 398,
-                "nanos": 0
+                "units": 59,
+                "nanos": 990000000
             },
             "categories": [
                 "tech",
-                "audio"
+                "accessories"
             ]
         },
         {
-            "id": "TC2023MKGB",
-            "name": "Keychron Q1 Pro Mechanical Keyboard",
-            "description": "Premium wireless custom mechanical keyboard, full aluminum body, double-gasket design, and QMK/VIA support.",
-            "picture": "/static/img/products/keychron_q1_1774051671374.png",
+            "id": "TC2024TNF",
+            "name": "The North Face Borealis Backpack",
+            "description": "Classical 28-liter backpack updated with an easy-to-access hydration compartment and a removable waist belt.",
+            "picture": "/static/img/products/north_face_backpack_1774069516910.png",
             "priceUsd": {
                 "currencyCode": "USD",
-                "units": 199,
-                "nanos": 0
+                "units": 98,
+                "nanos": 990000000
             },
             "categories": [
-                "tech",
-                "gaming"
+                "outdoor",
+                "accessories"
             ]
         },
         {
@@ -280,51 +174,6 @@
             },
             "categories": [
                 "footwear"
-            ]
-        },
-        {
-            "id": "9SIQT8TOJO",
-            "name": "ZWILLING Storage Glass Jar",
-            "description": "High quality borosilicate glass jar with a bamboo lid for perfect kitchen organization.",
-            "picture": "/static/img/products/zwilling_jar_1774051540671.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 29,
-                "nanos": 990000000
-            },
-            "categories": [
-                "kitchen"
-            ]
-        },
-        {
-            "id": "TC2024LPT1",
-            "name": "Apple MacBook Air M3",
-            "description": "Blazing fast M3 chip, stunning Liquid Retina display, and an incredibly thin and light design.",
-            "picture": "/static/img/products/macbook_air_m3_1774051684135.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 1099,
-                "nanos": 0
-            },
-            "categories": [
-                "tech",
-                "computers"
-            ]
-        },
-        {
-            "id": "TC2024VRHS",
-            "name": "Meta Quest 3 VR Headset",
-            "description": "Breakthrough mixed reality that transforms your home into a virtual playground, with lightning-fast performance and crystal-clear graphics.",
-            "picture": "/static/img/products/meta_quest_3_1774051742093.png",
-            "priceUsd": {
-                "currencyCode": "USD",
-                "units": 499,
-                "nanos": 990000000
-            },
-            "categories": [
-                "tech",
-                "gaming",
-                "vr"
             ]
         },
         {
@@ -344,18 +193,210 @@
             ]
         },
         {
-            "id": "TC2024TBLO",
-            "name": "Apple iPad Pro M2",
-            "description": "Astonishing performance and advanced displays, superfast wireless connectivity, and next-level Apple Pencil features.",
-            "picture": "/static/img/products/ipad_pro_1774051716883.png",
+            "id": "1YMWWN1N4O",
+            "name": "Seiko Presage Automatic",
+            "description": "This stunning stainless steel watch features a mesmerizing blue dial and automatic movement.",
+            "picture": "/static/img/products/seiko_watch_1774051465060.png",
             "priceUsd": {
                 "currencyCode": "USD",
-                "units": 799,
+                "units": 450,
+                "nanos": 0
+            },
+            "categories": [
+                "accessories"
+            ]
+        },
+        {
+            "id": "LS4PSXUNUM",
+            "name": "Peugeot Paris Salt & Pepper Mills",
+            "description": "Classic wooden mills with adjustable grind mechanisms, a staple for any kitchen.",
+            "picture": "/static/img/products/peugeot_mills_1774051528524.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 45,
+                "nanos": 0
+            },
+            "categories": [
+                "kitchen"
+            ]
+        },
+        {
+            "id": "TC2024WEAR",
+            "name": "Apple AirPods Pro (2nd Gen)",
+            "description": "Experience up to 2x more Active Noise Cancellation, plus Adaptive Transparency and Personalized Spatial Audio.",
+            "picture": "/static/img/products/airpods_pro_1774051730182.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 249,
                 "nanos": 0
             },
             "categories": [
                 "tech",
-                "tablet"
+                "audio"
+            ]
+        },
+        {
+            "id": "TC2024LPT1",
+            "name": "Apple MacBook Air M3",
+            "description": "Blazing fast M3 chip, stunning Liquid Retina display, and an incredibly thin and light design.",
+            "picture": "/static/img/products/macbook_air_m3_1774051684135.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 1099,
+                "nanos": 0
+            },
+            "categories": [
+                "tech",
+                "computers"
+            ]
+        },
+        {
+            "id": "OLJCESPC7Z",
+            "name": "Ray-Ban Aviator Classic",
+            "description": "Add a modern touch to your outfits with the iconic Ray-Ban aviator sunglasses.",
+            "picture": "/static/img/products/rayban_aviator_1774051438745.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 160,
+                "nanos": 0
+            },
+            "categories": [
+                "accessories"
+            ]
+        },
+        {
+            "id": "9SIQT8TOJO",
+            "name": "ZWILLING Storage Glass Jar",
+            "description": "High quality borosilicate glass jar with a bamboo lid for perfect kitchen organization.",
+            "picture": "/static/img/products/zwilling_jar_1774051540671.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 29,
+                "nanos": 990000000
+            },
+            "categories": [
+                "kitchen"
+            ]
+        },
+        {
+            "id": "TC2024VRHS",
+            "name": "Meta Quest 3 VR Headset",
+            "description": "Breakthrough mixed reality that transforms your home into a virtual playground, with lightning-fast performance and crystal-clear graphics.",
+            "picture": "/static/img/products/meta_quest_3_1774051742093.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 499,
+                "nanos": 990000000
+            },
+            "categories": [
+                "tech",
+                "gaming",
+                "vr"
+            ]
+        },
+        {
+            "id": "TC2024MON",
+            "name": "Monopoly Classic Board Game (Hasbro)",
+            "description": "The classic property-trading board game that everyone knows and loves. Buy, sell, and scheme your way to riches.",
+            "picture": "/static/img/products/monopoly_board_game_1774069541747.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 19,
+                "nanos": 990000000
+            },
+            "categories": [
+                "toys",
+                "games"
+            ]
+        },
+        {
+            "id": "TC2024HUB7",
+            "name": "Baseus 7-in-1 USB-C Hub",
+            "description": "Multi-port aluminum type-c hub with 4K HDMI, SD card readers, and ample USB ports for all your peripherals.",
+            "picture": "/static/img/products/usb_c_hub_1773992279379.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 59,
+                "nanos": 990000000
+            },
+            "categories": [
+                "tech",
+                "accessories"
+            ]
+        },
+        {
+            "id": "TC2023WLHP",
+            "name": "Sony WH-1000XM5",
+            "description": "Industry-leading noise cancellation, crystal clear hands-free calling, and up to 30 hours of battery life.",
+            "picture": "/static/img/products/sony_xm5_1774051659132.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 398,
+                "nanos": 0
+            },
+            "categories": [
+                "tech",
+                "audio"
+            ]
+        },
+        {
+            "id": "TC2024HM",
+            "name": "Herman Miller Aeron Chair",
+            "description": "The gold standard in office seating, designed to provide legendary comfort and support.",
+            "picture": "/static/img/products/herman_miller_aeron_1774069528720.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 1495,
+                "nanos": 0
+            },
+            "categories": [
+                "office",
+                "furniture"
+            ]
+        },
+        {
+            "id": "TC2023MKGB",
+            "name": "Keychron Q1 Pro Mechanical Keyboard",
+            "description": "Premium wireless custom mechanical keyboard, full aluminum body, double-gasket design, and QMK/VIA support.",
+            "picture": "/static/img/products/keychron_q1_1774051671374.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 199,
+                "nanos": 0
+            },
+            "categories": [
+                "tech",
+                "gaming"
+            ]
+        },
+        {
+            "id": "TC2024SMSP",
+            "name": "Xiaomi Smart Speaker",
+            "description": "Xiaomi Premium smart speaker with room-filling sound and an integrated voice assistant for your smart home.",
+            "picture": "/static/img/products/smart_speaker_1773992120364.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 129,
+                "nanos": 990000000
+            },
+            "categories": [
+                "tech",
+                "audio",
+                "smart-home"
+            ]
+        },
+        {
+            "id": "TC2024LEVI",
+            "name": "Levi\u2019s 501 Original Fit Jeans",
+            "description": "The original blue jean since 1873. Straight fit and iconic button fly.",
+            "picture": "/static/img/products/levis_501_jeans_1774069575290.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 59,
+                "nanos": 500000000
+            },
+            "categories": [
+                "clothing"
             ]
         },
         {
@@ -374,17 +415,18 @@
             ]
         },
         {
-            "id": "6E92ZMYYFZ",
-            "name": "YETI Rambler 14 oz Mug",
-            "description": "Stainless steel double-wall vacuum insulated mug. Keeps your coffee hot for hours.",
-            "picture": "/static/img/products/yeti_mug_1774051552128.png",
+            "id": "TC2024CAMX",
+            "name": "Sony Action Camera Extreme",
+            "description": "Rugged, waterproof action camera shooting in 5K resolution, perfect for extreme sports and outdoor adventures.",
+            "picture": "/static/img/products/action_camera_1773992324087.png",
             "priceUsd": {
                 "currencyCode": "USD",
-                "units": 30,
+                "units": 499,
                 "nanos": 0
             },
             "categories": [
-                "kitchen"
+                "tech",
+                "cameras"
             ]
         },
         {
@@ -400,6 +442,96 @@
             "categories": [
                 "tech",
                 "storage"
+            ]
+        },
+        {
+            "id": "TC2024KKEY",
+            "name": "GMK Laser Mechanical Keycap Set",
+            "description": "Vibrant and retro-themed high-quality PBT keycaps featuring Double-shot technology for ultimate longevity.",
+            "picture": "/static/img/products/mechanical_keycap_set_1773992135182.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 139,
+                "nanos": 0
+            },
+            "categories": [
+                "tech",
+                "accessories"
+            ]
+        },
+        {
+            "id": "TC2024LEGO",
+            "name": "LEGO Creator Expert Eiffel Tower",
+            "description": "Build one of the world's most beloved landmarks with this highly detailed 10,001-piece LEGO model.",
+            "picture": "/static/img/products/lego_eiffel_tower_1774069501177.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 629,
+                "nanos": 990000000
+            },
+            "categories": [
+                "toys",
+                "hobbies"
+            ]
+        },
+        {
+            "id": "2ZYFJ3GM2N",
+            "name": "Dyson Supersonic Hair Dryer",
+            "description": "The fastest drying, with powerful intelligent heat control to protect hair from extreme heat damage.",
+            "picture": "/static/img/products/dyson_hairdryer_1774051491326.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 429,
+                "nanos": 990000000
+            },
+            "categories": [
+                "hair",
+                "beauty"
+            ]
+        },
+        {
+            "id": "TC2024YAM",
+            "name": "Yamaha P-125 Digital Piano",
+            "description": "A compact digital piano that combines incredible piano performance with a user-friendly, minimalist design.",
+            "picture": "/static/img/products/yamaha_p125_piano_1774069560791.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 699,
+                "nanos": 990000000
+            },
+            "categories": [
+                "instruments",
+                "audio"
+            ]
+        },
+        {
+            "id": "TC2024SMTH",
+            "name": "Google Nest Smart Thermostat",
+            "description": "Intelligent home thermostat that learns your habits to save energy, with a sleek digital display.",
+            "picture": "/static/img/products/smart_thermostat_1773992263392.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 249,
+                "nanos": 0
+            },
+            "categories": [
+                "tech",
+                "smart-home"
+            ]
+        },
+        {
+            "id": "TC2023SMWH",
+            "name": "Smart Watch Series X10",
+            "description": "Midnight aluminum case with sport band, featuring new health sensors and a brighter display.",
+            "picture": "/static/img/products/apple_watch_s9_1774051644949.png",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 199,
+                "nanos": 0
+            },
+            "categories": [
+                "tech",
+                "accessories"
             ]
         }
     ]
