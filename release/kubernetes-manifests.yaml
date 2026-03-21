@@ -210,7 +210,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: ghcr.io/andres-santanaszk/productcatalog-service:mod1
+          image: ghcr.io/andres-santanaszk/productcatalog-service:mod2
           ports:
             - containerPort: 3550
           env:
@@ -730,7 +730,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: ghcr.io/andres-santanaszk/frontend:mod1
+          image: ghcr.io/andres-santanaszk/frontend:mod2
           ports:
             - containerPort: 8080
           readinessProbe:
