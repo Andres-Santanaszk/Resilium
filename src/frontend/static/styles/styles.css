@@ -189,7 +189,7 @@ header .h-control :-moz-placeholder {
 }
 
 header .navbar.sub-navbar {
-  height: 60px;
+  height: 80px;
   background-color: white;
   font-size: 15px;
   color: #b4b2bb;
@@ -205,11 +205,13 @@ header .navbar.sub-navbar > .container {
 }
 
 header .top-left-logo {
-  height: 40px;
+  height: 60px;
+  width: auto;
 }
 
 header .top-left-logo-cymbal {
-  height: 30px;
+  height: 45px;
+  width: auto;
 }
 
 header .navbar.sub-navbar .navbar-brand {
@@ -226,7 +228,7 @@ header .navbar.sub-navbar nav a {
 
 header .navbar.sub-navbar .controls {
   display: flex;
-  height: 60px;
+  height: 80px;
 }
 
 header .navbar.sub-navbar .controls a img {
