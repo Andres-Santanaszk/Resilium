@@ -28,6 +28,7 @@ spec:
   selector:
     matchLabels:
       app: currencyservice
+  replicas: 2
   template:
     metadata:
       labels:
@@ -102,7 +103,7 @@ spec:
   selector:
     matchLabels:
       app: loadgenerator
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -563,6 +564,7 @@ spec:
   selector:
     matchLabels:
       app: emailservice
+  replicas: 2
   template:
     metadata:
       labels:
@@ -638,7 +640,7 @@ spec:
   selector:
     matchLabels:
       app: paymentservice
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -841,6 +843,7 @@ spec:
   selector:
     matchLabels:
       app: recommendationservice
+  replicas: 2
   template:
     metadata:
       labels:
