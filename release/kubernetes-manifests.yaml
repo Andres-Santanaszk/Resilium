@@ -28,7 +28,7 @@ spec:
   selector:
     matchLabels:
       app: currencyservice
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -103,7 +103,7 @@ spec:
   selector:
     matchLabels:
       app: loadgenerator
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -187,7 +187,7 @@ metadata:
   labels:
     app: productcatalogservice
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: productcatalogservice
@@ -261,7 +261,7 @@ metadata:
   labels:
     app: checkoutservice
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: checkoutservice
@@ -344,7 +344,7 @@ metadata:
   labels:
     app: shippingservice
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: shippingservice
@@ -418,7 +418,7 @@ metadata:
   labels:
     app: cartservice
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: cartservice
@@ -496,7 +496,7 @@ spec:
   selector:
     matchLabels:
       app: redis-cart
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -566,7 +566,7 @@ spec:
   selector:
     matchLabels:
       app: emailservice
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -642,7 +642,7 @@ spec:
   selector:
     matchLabels:
       app: paymentservice
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -845,7 +845,7 @@ spec:
   selector:
     matchLabels:
       app: recommendationservice
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -923,7 +923,7 @@ spec:
   selector:
     matchLabels:
       app: adservice
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
