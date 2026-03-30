@@ -212,7 +212,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.5
+          image: ghcr.io/andres-santanaszk/productcatalog-service:mod2
           ports:
             - containerPort: 3550
           env:
@@ -739,7 +739,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.5
+          image: ghcr.io/andres-santanaszk/frontend:mod2
           ports:
             - containerPort: 8080
           readinessProbe:
