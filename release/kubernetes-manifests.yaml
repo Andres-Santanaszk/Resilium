@@ -36,15 +36,6 @@ spec:
     spec:
       serviceAccountName: currencyservice
       terminationGracePeriodSeconds: 5
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -123,15 +114,6 @@ spec:
       serviceAccountName: loadgenerator
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -205,10 +187,10 @@ metadata:
   labels:
     app: productcatalogservice
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: productcatalogservice
+  replicas: 3
   template:
     metadata:
       labels:
@@ -216,15 +198,6 @@ spec:
     spec:
       serviceAccountName: productcatalogservice
       terminationGracePeriodSeconds: 5
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -239,7 +212,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: ghcr.io/andres-santanaszk/productcatalog-service:mod2
+          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.5
           ports:
             - containerPort: 3550
           env:
@@ -288,25 +261,16 @@ metadata:
   labels:
     app: checkoutservice
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: checkoutservice
+  replicas: 3
   template:
     metadata:
       labels:
         app: checkoutservice
     spec:
       serviceAccountName: checkoutservice
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -380,25 +344,16 @@ metadata:
   labels:
     app: shippingservice
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: shippingservice
+  replicas: 3
   template:
     metadata:
       labels:
         app: shippingservice
     spec:
       serviceAccountName: shippingservice
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -463,10 +418,10 @@ metadata:
   labels:
     app: cartservice
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: cartservice
+  replicas: 3
   template:
     metadata:
       labels:
@@ -474,15 +429,6 @@ spec:
     spec:
       serviceAccountName: cartservice
       terminationGracePeriodSeconds: 5
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -556,15 +502,6 @@ spec:
       labels:
         app: redis-cart
     spec:
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -637,15 +574,6 @@ spec:
     spec:
       serviceAccountName: emailservice
       terminationGracePeriodSeconds: 5
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -722,15 +650,6 @@ spec:
     spec:
       serviceAccountName: paymentservice
       terminationGracePeriodSeconds: 5
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -794,10 +713,10 @@ metadata:
   labels:
     app: frontend
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: frontend
+  replicas: 3
   template:
     metadata:
       labels:
@@ -806,15 +725,6 @@ spec:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
       serviceAccountName: frontend
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -829,7 +739,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: ghcr.io/andres-santanaszk/frontend:mod2
+          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.5
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -943,15 +853,6 @@ spec:
     spec:
       serviceAccountName: recommendationservice
       terminationGracePeriodSeconds: 5
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -1030,15 +931,6 @@ spec:
     spec:
       serviceAccountName: adservice
       terminationGracePeriodSeconds: 5
-      tolerations:
-        - key: "node.kubernetes.io/not-ready"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
-          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
