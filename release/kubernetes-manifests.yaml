@@ -36,6 +36,15 @@ spec:
     spec:
       serviceAccountName: currencyservice
       terminationGracePeriodSeconds: 5
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -114,6 +123,15 @@ spec:
       serviceAccountName: loadgenerator
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -198,6 +216,15 @@ spec:
     spec:
       serviceAccountName: productcatalogservice
       terminationGracePeriodSeconds: 5
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -271,6 +298,15 @@ spec:
         app: checkoutservice
     spec:
       serviceAccountName: checkoutservice
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -354,6 +390,15 @@ spec:
         app: shippingservice
     spec:
       serviceAccountName: shippingservice
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -429,6 +474,15 @@ spec:
     spec:
       serviceAccountName: cartservice
       terminationGracePeriodSeconds: 5
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -502,6 +556,15 @@ spec:
       labels:
         app: redis-cart
     spec:
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -574,6 +637,15 @@ spec:
     spec:
       serviceAccountName: emailservice
       terminationGracePeriodSeconds: 5
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -650,6 +722,15 @@ spec:
     spec:
       serviceAccountName: paymentservice
       terminationGracePeriodSeconds: 5
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -725,6 +806,15 @@ spec:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
       serviceAccountName: frontend
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -853,6 +943,15 @@ spec:
     spec:
       serviceAccountName: recommendationservice
       terminationGracePeriodSeconds: 5
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -931,6 +1030,15 @@ spec:
     spec:
       serviceAccountName: adservice
       terminationGracePeriodSeconds: 5
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 20
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
