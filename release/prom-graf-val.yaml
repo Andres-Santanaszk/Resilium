@@ -1,0 +1,13 @@
+grafana:
+  service:
+    type: LoadBalancer
+  adminPassword: "123456"
+  persistence:
+    enabled: false
+
+prometheus:
+  prometheusSpec:
+    retention: 1d
+    storageSpec:
+      emptyDir:
+        medium: ""
