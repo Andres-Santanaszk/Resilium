@@ -34,16 +34,6 @@ spec:
       labels:
         app: currencyservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - currencyservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: currencyservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -121,16 +111,6 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - loadgenerator
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: loadgenerator
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
@@ -216,16 +196,6 @@ spec:
       labels:
         app: productcatalogservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - productcatalogservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: productcatalogservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -300,16 +270,6 @@ spec:
       labels:
         app: checkoutservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - checkoutservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: checkoutservice
       securityContext:
         fsGroup: 1000
@@ -393,16 +353,6 @@ spec:
       labels:
         app: shippingservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - shippingservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: shippingservice
       securityContext:
         fsGroup: 1000
@@ -477,16 +427,6 @@ spec:
       labels:
         app: cartservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - cartservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: cartservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -562,16 +502,6 @@ spec:
       labels:
         app: redis-cart
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - redis-cart
-              topologyKey: "kubernetes.io/hostname"
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -642,16 +572,6 @@ spec:
       labels:
         app: emailservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - emailservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: emailservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -728,16 +648,6 @@ spec:
       labels:
         app: paymentservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - paymentservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: paymentservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -814,16 +724,6 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - frontend
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: frontend
       securityContext:
         fsGroup: 1000
@@ -938,16 +838,6 @@ spec:
       labels:
         app: recommendationservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - recommendationservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: recommendationservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -1026,16 +916,6 @@ spec:
       labels:
         app: adservice
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: app
-                    operator: In
-                    values:
-                      - adservice
-              topologyKey: "kubernetes.io/hostname"
       serviceAccountName: adservice
       terminationGracePeriodSeconds: 5
       securityContext:
