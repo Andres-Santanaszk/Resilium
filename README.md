@@ -23,13 +23,25 @@ The project was developed with the following objectives:
 
 ## Architecture
 
+
+[![Architecture of microservices](/docs/img/architecture-diagram.png)](/docs/img/architecture-diagram.png)
+
 The platform is composed of multiple microservices that communicate with each other through gRPC and HTTP.
 
 The application is deployed on Kubernetes, where each microservice runs inside pods and is exposed internally through Kubernetes Services.
 
 External access is handled through an Ingress Controller, while MetalLB provides LoadBalancer functionality in an on-premise environment.
 
-[![Architecture of microservices](/docs/img/architecture-diagram.png)](/docs/img/architecture-diagram.png)
+### High Availability Architecture
+
+<p align="center">
+  <img src="docs/img/high-availability-architecture.png" alt="High Availability Architecture Diagram" width="850">
+</p>
+
+The diagram shows the high availability architecture implemented for the project. Client traffic enters the Kubernetes cluster through the Ingress layer, while MetalLB provides LoadBalancer functionality in the on-premise environment.
+
+Inside the cluster, Kubernetes Services distribute traffic across the different microservice pods. The application runs on multiple Kubernetes nodes deployed as Ubuntu Server virtual machines on Proxmox VE, allowing workloads to be redistributed if a pod or node fails.
+
 
 ## Technologies used
 
