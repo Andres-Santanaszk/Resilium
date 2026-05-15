@@ -82,9 +82,3 @@ Inside the cluster, Kubernetes Services distribute traffic across the different 
 <p align="center">
   <img src="docs/img/product_review_screen.png" alt="Product Review Screen" width="700">
 </p>
-
-## Disclaimer
-
-This project is based on **Google's Online Boutique**, an open-source cloud-first microservices demo application licensed under the **Apache License 2.0**.
-
-This repository contains modifications and deployment work made for an academic infrastructure project, including Kubernetes deployment, high availability testing, load balancing, ingress configuration, autoscaling and monitoring.
