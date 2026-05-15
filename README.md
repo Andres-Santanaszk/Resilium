@@ -1,6 +1,6 @@
 # Resilium
 
-## Credits and attribution
+## Disclaimer
 
 This project is based on **Google's Online Boutique**, an open-source cloud-first microservices demo application licensed under the **Apache License 2.0**.
 
