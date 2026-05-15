@@ -62,17 +62,17 @@ External access is handled through an Ingress Controller, while MetalLB provides
 ### Main Page
 
 <p align="center">
-  <img src="main_page.png" alt="Main Page" width="700">
+  <img src="docs/img/main_page.png" alt="Main Page" width="700">
 </p>
 
 ### Checkout Screen
 
 <p align="center">
-  <img src="checkout-screen.png" alt="Checkout Screen" width="700">
+  <img src="docs/img/checkout-screen.png" alt="Checkout Screen" width="700">
 </p>
 
 ### Product Review Screen
 
 <p align="center">
-  <img src="product_review_screen.png" alt="Product Review Screen" width="700">
+  <img src="docs/img/product_review_screen.png" alt="Product Review Screen" width="700">
 </p>
