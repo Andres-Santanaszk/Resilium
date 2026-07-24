@@ -1,0 +1,15 @@
+all:
+  children:
+    SW_RT:
+      vars:
+        ansible_user: andrzejkl
+        ansible_password: "{{ ansible_ssh_pass }}"
+        ansible_network_os: cisco.ios.ios
+        ansible_connection: ansible.netcommon.network_cli
+        
+      hosts:
+        rt2901:
+          ansible_host: 172.16.100.1
+        sw2960:
+          ansible_host: 172.16.100.2
+        

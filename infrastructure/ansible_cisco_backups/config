@@ -1,0 +1,15 @@
+# esto va en ~/.ssh/config, simplemente para evitar escribir todo el comando.
+# conexión hacía MGMT
+
+Host 172.16.100.?
+    KexAlgorithms +diffie-hellman-group14-sha1
+    HostKeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    Ciphers +aes128-cbc
+    MACs +hmac-sha1
+
+
+Host 172.16.100.*
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+

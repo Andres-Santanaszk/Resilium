@@ -1,0 +1,23 @@
+---
+- name: Backup de configuracion Cisco Switch & Router
+  hosts: SW_RT
+  gather_facts: false
+
+  tasks:
+    - name: Exportar running-config usando SSH nativo
+      ansible.builtin.shell: >
+        sshpass -p '{{ ansible_password }}' 
+        ssh -o StrictHostKeyChecking=no 
+        -F {{ playbook_dir }}/config 
+        {{ ansible_user }}@{{ ansible_host }} 
+      args:
+        stdin: |
+          terminal length 0
+          show running-config
+      register: salida
+      delegate_to: localhost
+
+    - name: Guardar backup local
+      ansible.builtin.copy:
+        content: "{{ salida.stdout }}"
+        dest: "./infrastructure/ansible_cisco_backups/rt_sw_backups/{{ inventory_hostname }}_running-config.txt"

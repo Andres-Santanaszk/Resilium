@@ -1,0 +1,36 @@
+variable "aws_region" {
+  type = string
+}
+
+variable "instance_type" {
+    type = string
+}
+
+variable "ami" {
+    type = string
+}
+
+variable "key_name" {
+    type = string
+}
+
+variable "default_az" {
+    type = string
+}
+
+
+variable "instances" {
+  type = map(object({
+    instance_type = string
+    availability_zone = string
+    key_name = optional(string)
+    subnet_id = string
+  }))
+}
+
+locals {
+  subnet_ids = {
+    public_subnet      = aws_subnet.public_subnet.id
+    public_subnet_az_3 = aws_subnet.public_subnet_az_3.id
+  }
+}

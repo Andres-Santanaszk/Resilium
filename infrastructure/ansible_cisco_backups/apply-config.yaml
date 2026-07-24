@@ -1,0 +1,34 @@
+---
+- name: Aplicar configuracion a Cisco Switch & Router
+  hosts: SW_RT
+  gather_facts: false
+
+  tasks:
+    - name: Definir la ruta absoluta del archivo de respaldo
+      ansible.builtin.set_fact:
+        archivo_backup: "{{ playbook_dir }}/rt_sw_backups/{{ inventory_hostname }}_running-config.txt"
+
+    - name: Leer contenido del respaldo local
+      ansible.builtin.slurp:
+        src: "{{ archivo_backup }}"
+      register: backup_contenido
+      delegate_to: localhost
+
+    - name: Aplicar configuracion limpia via SSH nativo
+      ansible.builtin.shell: >
+        sshpass -p '{{ ansible_password }}' 
+        ssh -o StrictHostKeyChecking=no 
+        -F {{ playbook_dir }}/config 
+        {{ ansible_user }}@{{ ansible_host }}
+      args:
+        stdin: |
+          configure terminal
+          {{ (backup_contenido.content | b64decode) }}
+          end
+          write memory
+      register: resultado_aplicar
+      delegate_to: localhost
+
+    - name: Mostrar resultado de la aplicacion
+      ansible.builtin.debug:
+        var: resultado_aplicar.stdout
