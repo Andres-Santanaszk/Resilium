@@ -3,34 +3,42 @@ variable "aws_region" {
 }
 
 variable "instance_type" {
-    type = string
+  type = string
 }
 
 variable "ami" {
-    type = string
+  type = string
 }
 
 variable "key_name" {
-    type = string
+  type = string
 }
 
 variable "default_az" {
-    type = string
+  type = string
 }
 
 
 variable "instances" {
   type = map(object({
-    instance_type = string
+    instance_type     = string
     availability_zone = string
-    key_name = optional(string)
-    subnet_id = string
+    key_name          = optional(string)
+    subnet_id         = string
   }))
 }
 
 locals {
+  env         = "staging"
+  region      = "us-west-1"
+  zone1       = "us-west-1a"
+  zone2       = "us-west-1c"
+  eks_name    = "selora-eks"
+  eks_version = "1.34"
+
   subnet_ids = {
     public_subnet      = aws_subnet.public_subnet.id
     public_subnet_az_3 = aws_subnet.public_subnet_az_3.id
   }
+
 }

@@ -15,7 +15,10 @@
 *.iws
 *.pyc
 *.swp
-*.tfstate*
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+!**/.terraform.lock.hcl
 *.tfvars
 *~
 bin/
