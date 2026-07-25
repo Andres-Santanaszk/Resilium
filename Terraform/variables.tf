@@ -35,10 +35,4 @@ locals {
   zone2       = "us-west-1c"
   eks_name    = "selora-eks"
   eks_version = "1.34"
-
-  subnet_ids = {
-    public_subnet      = aws_subnet.public_subnet.id
-    public_subnet_az_3 = aws_subnet.public_subnet_az_3.id
-  }
-
 }
