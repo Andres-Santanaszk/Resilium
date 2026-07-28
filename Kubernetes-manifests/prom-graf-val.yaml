@@ -1,14 +1,14 @@
-grafana:
-  service:
-    type: LoadBalancer
-    loadBalancerIP: 192.168.100.215
-  adminPassword: "[PASSWORD]"
-  persistence:
-    enabled: false
+# grafana:
+#   service:
+#     type: LoadBalancer
+#     loadBalancerIP: 192.168.100.215
+#   adminPassword: "[PASSWORD]"
+#   persistence:
+#     enabled: false
 
-prometheus:
-  prometheusSpec:
-    retention: 1d
-    storageSpec:
-      emptyDir:
-        medium: ""
+# prometheus:
+#   prometheusSpec:
+#     retention: 1d
+#     storageSpec:
+#       emptyDir:
+#         medium: ""
