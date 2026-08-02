@@ -8,7 +8,7 @@ resource "helm_release" "external_nginx" {
   version          = "4.15.1"
 
   values = [
-    file("${path.module}/../Kubernetes-manifests/values/nginx-ingress.yaml")
+    file("${path.module}/../../Kubernetes-manifests/values/nginx-ingress.yaml")
   ]
 
   depends_on = [

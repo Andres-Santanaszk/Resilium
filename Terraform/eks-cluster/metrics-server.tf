@@ -7,7 +7,7 @@ resource "helm_release" "metrics_server" {
   version    = "3.12.1"
 
   values = [
-    file("${path.module}/../Kubernetes-manifests/values/metrics-server.yaml")
+    file("${path.module}/../../Kubernetes-manifests/values/metrics-server.yaml")
   ]
 
   depends_on = [
