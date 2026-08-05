@@ -4,10 +4,11 @@ env:
   AWS_REGION: us-west-1
   AWS_IAM_ROLE: arn:aws:iam::023036697490:role/github-actions
 
+# For now, im just testing, making an image every time I push on main
 on:
   push:
     branches:
-    - main
+    - main 
 
 jobs:
   build-and-push:
@@ -37,7 +38,7 @@ jobs:
       run: |
         bash ./scripts/git_update.sh -v patch
 
-    - name: Add app version (Optional)
+    - name: Add app version
       run: echo ${{ steps.release.outputs.new-tag }} > version.txt
 
     - name: Build, tag, and push Docker image to Amazon ECR
