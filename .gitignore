@@ -31,3 +31,4 @@ release/wi-kubernetes-manifests.yaml
 vendor/
 infrastructure/ansible_cisco_backups/rt_sw_backups/*.txt
 infrastructure/*.txt
+repo-secret.yaml

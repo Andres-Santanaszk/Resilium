@@ -1,0 +1,38 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: selora
+  namespace: argocd
+
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: frontend=023036697490.dkr.ecr.us-west-1.amazonaws.com/andres-santanaszk/resilium
+    argocd-image-updater.argoproj.io/frontend.update-strategy: semver
+    argocd-image-updater.argoproj.io/write-back-method: git
+
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io/foreground
+
+spec:
+  project: default
+
+  source:
+    repoURL: git@github.com:Andres-Santanaszk/resilium.git
+    targetRevision: HEAD
+    path: Kubernetes-manifests/applications
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: false
+
+    syncOptions:
+      - Validate=true
+      - CreateNamespace=false
+      - PrunePropagationPolicy=foreground
+      - PruneLast=true
