@@ -4,11 +4,13 @@ env:
   AWS_REGION: us-west-1
   AWS_IAM_ROLE: arn:aws:iam::023036697490:role/github-actions
 
-# For now, im just testing, making an image every time I push on main
+
 on:
   push:
     branches:
     - main 
+    paths:
+      - "src/frontend/**"
 
 jobs:
   build-and-push:
@@ -51,3 +53,21 @@ jobs:
 
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./src/frontend
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+    - name: Commit updated Kubernetes manifest
+      env:
+        IMAGE_TAG: ${{ steps.release.outputs.new-tag }}
+      run: |
+        set -euo pipefail
+
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        git add Kubernetes-manifests/applications/frontend/frontend.yaml
+
+        if git diff --cached --quiet; then
+          echo "No manifest changes to commit"
+          exit 0
+        fi
+
+        git commit -m "deploy(frontend): ${IMAGE_TAG}"
+        git push origin HEAD:main
