@@ -51,7 +51,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: 023036697490.dkr.ecr.us-west-1.amazonaws.com/andres-santanaszk/resilium:v0.1.13
+          image: 023036697490.dkr.ecr.us-west-1.amazonaws.com/andres-santanaszk/resilium:v0.1.7
           ports:
             - name: http
               containerPort: 8080
