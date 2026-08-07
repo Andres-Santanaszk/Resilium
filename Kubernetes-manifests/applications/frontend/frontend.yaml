@@ -30,7 +30,7 @@ spec:
   selector:
     matchLabels:
       app: frontend
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -51,7 +51,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: 023036697490.dkr.ecr.us-west-1.amazonaws.com/andres-santanaszk/resilium:v0.1.12
+          image: 023036697490.dkr.ecr.us-west-1.amazonaws.com/andres-santanaszk/resilium:v0.1.7
           ports:
             - name: http
               containerPort: 8080
