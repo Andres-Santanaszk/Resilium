@@ -26,8 +26,26 @@
 -->
 <main role="main" class="home">
 
-  <!-- The image at the top of the home page, displayed on smaller screens. -->
-  <div class="home-mobile-hero-banner d-lg-none"></div>
+  <section class="home-hero">
+    <div class="home-hero-content">
+      <p class="home-hero-kicker">New season drop</p>
+      <h1>Find the gear that makes every day feel upgraded.</h1>
+      <p class="home-hero-copy">
+        Curated tech, home, style, and essentials with fast checkout and daily deals.
+      </p>
+      <div class="home-hero-actions">
+        <a class="cymbal-button-primary home-hero-button" href="#hot-products">Shop Hot Picks</a>
+        <span class="home-hero-note">Free shipping on featured finds</span>
+      </div>
+    </div>
+    <div class="home-hero-media" aria-hidden="true">
+      <img src="{{ $.baseUrl }}/static/images/HeroBannerImage2.png" alt="">
+      <div class="home-hero-price-card">
+        <span>Weekend edit</span>
+        <strong>Fresh deals live now</strong>
+      </div>
+    </div>
+  </section>
 
   <div class="container-fluid">
     <div class="row">
@@ -39,19 +57,23 @@
 
       <div class="col-12 col-lg-12 px-10-percent">
 
-        <div class="row hot-products-row px-xl-6">
+        <div class="row hot-products-row px-xl-6" id="hot-products">
 
           <div class="col-12">
-            <h3>Hot Products</h3>
+            <div class="hot-products-heading">
+              <span>Trending now</span>
+              <h3>Hot Products</h3>
+            </div>
           </div>
 
           {{ range $.products }}
           <div class="col-md-4 hot-product-card">
-            <a href="{{ $.baseUrl }}/product/{{.Item.Id}}">
+            <a href="{{ $.baseUrl }}/product/{{.Item.Id}}" aria-label="View {{ .Item.Name }}">
               <img loading="lazy" src="{{ $.baseUrl }}{{.Item.Picture}}">
               <div class="hot-product-card-img-overlay"></div>
+              <span class="hot-product-card-cta">View item</span>
             </a>
-            <div>
+            <div class="hot-product-card-details">
               <div class="hot-product-card-name">{{ .Item.Name }}</div>
               <div class="hot-product-card-price">{{ renderMoney .Price }}</div>
             </div>
