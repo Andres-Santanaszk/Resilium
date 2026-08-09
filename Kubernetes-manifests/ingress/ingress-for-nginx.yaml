@@ -5,8 +5,10 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: http-01-prod
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
+
 spec:
   ingressClassName: external-nginx
+
   rules:
     - host: andrzejkl.site
       http:
@@ -18,7 +20,20 @@ spec:
                 name: frontend
                 port:
                   number: 8080
+
+    - host: origin.andrzejkl.site
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend
+                port:
+                  number: 8080
+
   tls:
     - hosts:
         - andrzejkl.site
+        - origin.andrzejkl.site
       secretName: andrzejkl-site
