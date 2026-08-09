@@ -1,5 +1,7 @@
 # Resilium
 
+## ALMOST EVERYTHING IS OUTDATED
+
 ## Overview
 
 **Resilium** is a cloud-first infrastructure project focused on deploying and operating a web-based e-commerce application called **Selora**, using a distributed microservices architecture.
