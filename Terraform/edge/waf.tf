@@ -9,6 +9,73 @@ resource "aws_wafv2_web_acl" "cloudfront" {
   }
 
   rule {
+  name     = "aws-ip-reputation"
+  priority = 20
+
+  override_action {
+    count {}
+  }
+
+  statement {
+    managed_rule_group_statement {
+      name        = "AWSManagedRulesAmazonIpReputationList"
+      vendor_name = "AWS"
+    }
+  }
+
+  visibility_config {
+    cloudwatch_metrics_enabled = true
+    metric_name                = "aws-ip-reputation"
+    sampled_requests_enabled   = true
+  }
+}
+
+rule {
+  name     = "aws-common-rules"
+  priority = 30
+
+  override_action {
+    count {}
+  }
+
+  statement {
+    managed_rule_group_statement {
+      name        = "AWSManagedRulesCommonRuleSet"
+      vendor_name = "AWS"
+    }
+  }
+
+  visibility_config {
+    cloudwatch_metrics_enabled = true
+    metric_name                = "aws-common-rules"
+    sampled_requests_enabled   = true
+  }
+}
+
+rule {
+  name     = "aws-known-bad-inputs"
+  priority = 40
+
+  override_action {
+    count {}
+  }
+
+  statement {
+    managed_rule_group_statement {
+      name        = "AWSManagedRulesKnownBadInputsRuleSet"
+      vendor_name = "AWS"
+    }
+  }
+
+  visibility_config {
+    cloudwatch_metrics_enabled = true
+    metric_name                = "aws-known-bad-inputs"
+    sampled_requests_enabled   = true
+  }
+}
+
+
+  rule {
     name     = "rate-limit-by-ip"
     priority = 10
 
