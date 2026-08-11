@@ -1,14 +1,8 @@
-# ==========================================
-# PROVEEDOR SECUNDARIO (EL RESPALDO)
-# ==========================================
 provider "aws" {
   alias      = "backup"
   region     = "us-west-2" # Oregon
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
 }
 
-# Red pública mínima para el Proxy de Respaldo
 resource "aws_vpc" "backup_vpc" {
   provider             = aws.backup
   cidr_block           = "10.100.0.0/16"
@@ -24,7 +18,7 @@ resource "aws_subnet" "backup_public" {
   provider                = aws.backup
   vpc_id                  = aws_vpc.backup_vpc.id
   cidr_block              = "10.100.1.0/24"
-  map_public_ip_on_launch = true # OBLIGATORIO: Los clientes de internet deben poder llegar aquí
+  map_public_ip_on_launch = true
 }
 
 resource "aws_route_table" "backup_rt" {
@@ -54,7 +48,6 @@ resource "aws_security_group" "backup_proxy_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  # Puertos web para recibir a los clientes
   ingress {
     from_port   = 80
     to_port     = 80
@@ -75,21 +68,17 @@ resource "aws_security_group" "backup_proxy_sg" {
   }
 }
 
-# ==========================================
-# EL PROXY SALVAVIDAS (EC2 Región B)
-# ==========================================
 resource "aws_instance" "public_proxy_failover" {
   provider               = aws.backup
-  ami                    = "ami-02167eae61967e403" # Ubuntu 22.04 LTS en us-west-2
+  ami                    = "ami-02167eae61967e403" 
   instance_type          = "t3.micro"
   subnet_id              = aws_subnet.backup_public.id
   vpc_security_group_ids = [aws_security_group.backup_proxy_sg.id]
-  source_dest_check      = false # OBLIGATORIO para que funcione como router
+  source_dest_check      = false
 
 
   tags = { Name = "failover-proxy-public" }
 
-  # Este script instala Tailscale Y un Proxy inverso (Nginx)
   user_data = <<-EOF
     #!/bin/bash
     echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf

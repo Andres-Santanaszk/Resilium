@@ -37,21 +37,7 @@ locals {
   eks_version = "1.34"
   aws_region  = "us-west-1"
 }
-variable "aws_access_key" {
-  description = "aa"
-  type        = string
-  sensitive   = true
-}
-variable "aws_secret_key" {
-  description = "secret"
-  type        = string
-  sensitive   = true
-}
-variable "wazuh_password" {
-  description = "claves para los agentes de wazuh"
-  type        = string
-  sensitive   = true
-}
+
 variable "vpn_key" {
   description = "clave para conectarse al VPN automaticamente"
   type        = string

@@ -6,7 +6,7 @@ resource "aws_security_group" "tailscale_internal_sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = [aws_vpc.main.cidr_block] # Permite tráfico de todo tu clúster EKS
+    cidr_blocks = [aws_vpc.main.cidr_block] 
   }
   egress {
     from_port   = 0
@@ -17,12 +17,12 @@ resource "aws_security_group" "tailscale_internal_sg" {
 }
 
 resource "aws_instance" "tailscale_internal" {
-  ami           = "ami-0fb110df4c5094d21" # Cambia al AMI de Ubuntu 22.04 de tu región principal
+  ami           = "ami-0fb110df4c5094d21" 
   instance_type = "t3.micro"
-  subnet_id     = aws_subnet.private_zone1.id # Vive segura en la subred privada
+  subnet_id     = aws_subnet.private_zone1.id 
 
   vpc_security_group_ids = [aws_security_group.tailscale_internal_sg.id]
-  source_dest_check      = false # OBLIGATORIO para que funcione como router
+  source_dest_check      = false
 
   tags = { Name = "${local.env}-vpn-router-internal" }
 
