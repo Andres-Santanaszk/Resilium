@@ -47,13 +47,13 @@ resource "aws_eks_node_group" "general" {
   instance_types = ["t3.small"]
 
   scaling_config {
-    desired_size = 6
-    max_size     = 8
-    min_size     = 5
+    desired_size = 8
+    max_size     = 10
+    min_size     = 8
   }
 
   update_config {
-    max_unavailable = 1
+    max_unavailable = 2
   }
 
   labels = {

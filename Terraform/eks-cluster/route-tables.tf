@@ -5,16 +5,6 @@ resource "aws_route_table" "private" {
     cidr_block     = "0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.nat.id
   }
-
-  # RUTA 2: Exclusiva para VictoriaMetrics y Grafana On-Premises
-  route {
-    cidr_block           = "172.16.100.26/32"
-    network_interface_id = aws_instance.tailscale_internal.primary_network_interface_id
-  }
-
-  tags = {
-    Name = "${local.env}-private"
-  }
 }
 
 resource "aws_route_table" "public" {
