@@ -1,0 +1,29 @@
+# Desactivamos componentes visuales innecesarios
+alertmanager:
+  enabled: false
+grafana:
+  enabled: false
+
+# Apagamos el agente experimental que no levantaba el pod
+prometheusAgent:
+  enabled: false
+
+# Encendemos el Prometheus tradicional (este sí despliega el pod de inmediato)
+prometheus:
+  enabled: true
+  prometheusSpec:
+    retention: "1h"
+    # Selectores globales para que descubra a todos los exporters del clúster
+    serviceMonitorSelector: {}
+    podMonitorSelector: {}
+    probeSelector: {}
+    
+    # Apuntamos directamente a tu servidor físico en Proxmox
+    remoteWrite:
+      - url: "http://172.16.100.26:8428/api/v1/write"
+
+# Recolectores estándar
+kubeStateMetrics:
+  enabled: true
+nodeExporter:
+  enabled: true
